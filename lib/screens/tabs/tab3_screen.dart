@@ -17,7 +17,7 @@ class _Tab3ScreenState extends State<Tab3Screen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('WinCryptoVault • Swap'),
+        title: const Text('Win • Swap'),
       ),
       body: ListView(
         padding: const EdgeInsets.all(16),
