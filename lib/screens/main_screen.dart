@@ -16,10 +16,10 @@ class _MainScreenState extends State<MainScreen> {
   int _currentIndex = 0;
 
   final List<Widget> _screens = const [
-    Tab1Screen(),
-    Tab2Screen(),
     Tab3Screen(),
     Tab4Screen(),
+    Tab1Screen(),
+    Tab2Screen(),
   ];
 
   @override
@@ -33,16 +33,6 @@ class _MainScreenState extends State<MainScreen> {
         indicatorColor: AppTheme.primaryColor.withValues(alpha: 0.2),
         destinations: [
         NavigationDestination(
-          icon: const Icon(Icons.account_balance_wallet_outlined),
-          selectedIcon: const Icon(Icons.account_balance_wallet, color: AppTheme.primaryColor),
-          label: 'Assets',
-        ),
-        NavigationDestination(
-          icon: const Icon(Icons.savings_outlined),
-          selectedIcon: const Icon(Icons.savings, color: AppTheme.primaryColor),
-          label: 'Staking',
-        ),
-        NavigationDestination(
           icon: const Icon(Icons.swap_horiz_outlined),
           selectedIcon: const Icon(Icons.swap_horiz, color: AppTheme.primaryColor),
           label: 'Swap',
@@ -52,7 +42,16 @@ class _MainScreenState extends State<MainScreen> {
           selectedIcon: const Icon(Icons.lock, color: AppTheme.primaryColor),
           label: 'Security',
         ),
-
+        NavigationDestination(
+          icon: const Icon(Icons.account_balance_wallet_outlined),
+          selectedIcon: const Icon(Icons.account_balance_wallet, color: AppTheme.primaryColor),
+          label: 'Assets',
+        ),
+        NavigationDestination(
+          icon: const Icon(Icons.savings_outlined),
+          selectedIcon: const Icon(Icons.savings, color: AppTheme.primaryColor),
+          label: 'Staking',
+        ),
         ],
       ),
     );
